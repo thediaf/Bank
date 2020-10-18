@@ -8,8 +8,42 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-left no-padding">
+                            <ul>
+                                <li class="date">
+                                    {{ 'now' |date("m-d-Y H:i") }}
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="lnr">Creer un compte</span>
+                                            <span>Creer un compte</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="lnr btn btn-danger">Se connecter</span>
+                                            <span class="btn btn-danger">Se connecter</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         {% block body %}{% endblock %}
 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quisquam distinctio aut quas voluptas accusamus officiis molestiae fugit voluptate! Ab eaque voluptate animi eius quas deserunt fugit iste similique quidem.</p>
         <link rel="stylesheet" href="{{ asset('js/bootstrap.min.js') }}">
         {% block javascripts %}{% endblock %}
     </body>
